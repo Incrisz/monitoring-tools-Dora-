@@ -1,0 +1,11 @@
+groups:
+- name: test-alerts
+  rules:
+  - alert: TestAlert
+    expr: vector(1)
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "This is a new test alert"
+      description: "Testing the alerting system by Incrisz with anger"
